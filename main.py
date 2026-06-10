@@ -23,8 +23,8 @@ if today_date in birthdays_dates:
         revised = text.replace('[NAME]',birthdays_dates[today_date]['name']).replace('Angela','Soroush Ahmadipanah')
 
     # Yahoo sender
-    my_email =
-    my_password =
+    my_email = os.environ.get("MY_EMAIL")
+    my_password = os.environ.get("MY_PASSWORD")
     receiver_email = birthdays_dates[today_date]['email']
 
     x = random.randint(1,5)
