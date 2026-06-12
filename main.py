@@ -3,6 +3,7 @@ import pandas as pd
 import random
 import smtplib
 from email.message import EmailMessage
+import os
 
 # Today date
 now = dt.datetime.now()
